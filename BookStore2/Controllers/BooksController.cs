@@ -98,7 +98,7 @@ namespace BookStore2.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookExists(book.Id))
+                    if (!BookExists(book.Id)  )
                     {
                         return NotFound();
                     }
